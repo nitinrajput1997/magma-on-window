@@ -39,3 +39,6 @@ NMS_POD=$(kubectl -n orc8r get pod -l app.kubernetes.io/component=magmalte -o js
 kubectl -n orc8r exec -it ${NMS_POD} -- yarn setAdminPassword magma-test admin admin
 kubectl -n orc8r exec -it ${NMS_POD} -- yarn setAdminPassword master admin admin
 ```
+### Access Magma Dashboard
+
+Paste the generated dns (which comes when ansible script completes all tasks successfully) to the location **C:\Windows\System32\drivers\etc\hosts**
